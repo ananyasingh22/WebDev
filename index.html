@@ -1,0 +1,627 @@
+<!-- Ananya Singh
+   Introduction to Web Dev
+   Final Project  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ananya Singh</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+<!--  LOADER  -->
+<div class="loader" id="loader">
+  <div class="loader-text">
+    <span>A</span><span>N</span><span>A</span><span>N</span><span>Y</span><span>A</span>
+    <span>&nbsp;</span>
+    <span>S</span><span>I</span><span>N</span><span>G</span><span>H</span>
+  </div>
+</div>
+
+<!--  CURSOR  -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!--  NAVBAR  -->
+<!-- Bootstrap navbar: collapses on mobile via data-bs-toggle -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container-xl">
+    <a class="navbar-brand nav-logo" href="#hero">अनन्या</a>
+
+    <button class="navbar-toggler custom-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-lg-4 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link site-nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link nav-cta-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--  HERO  -->
+<section class="hero-section" id="hero">
+  <div class="hero-bg-text">ANANYA SINGH</div>
+  <div class="container-xl">
+    <!-- Bootstrap grid: two columns on lg+, stacks on mobile -->
+    <div class="row align-items-center hero-row">
+      <div class="col-lg-6 hero-left">
+        <h1 class="hero-name reveal">
+          <span class="line">Ananya</span>
+          <span class="line accent-pink">Singh</span>
+        </h1>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="site-btn site-btn-primary">See My Work</a>
+          <a href="#contact" class="site-btn site-btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="col-lg-6 hero-right reveal">
+        <img
+          src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/IMG_7124.jpg"
+          alt="Ananya Singh"
+          class="hero-img img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!--  ABOUT  -->
+<section class="about section" id="about">
+  <div class="section-label">/ About</div>
+  <div class="about-grid">
+    <div class="about-left">
+      <h2 class="section-title reveal">
+        Designing at the<br/>
+        <em class="accent-yellow">intersection</em><br/>
+        of tech &amp; creativity.
+      </h2>
+    </div>
+    <div class="about-right reveal">
+      <p class="about-body">
+        I'm Ananya, a <strong>NYU Tandon</strong> student studying Integrated Media Design
+        with a specialisation in Mathematics and Computer Science. I've spent time at
+        <strong>working on my skills and building experience in aviation and sustainbility. Major learning happend
+          in Airbus, where I worked </strong> across three roles from enablement and finance to
+        project management and culture change. I really believe that the best engineering is as much about
+         people as it is about systems.
+      </p>
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-num">2+</span>
+          <span class="fact-label">Years Work Experience</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num">NYU</span>
+          <span class="fact-label">Tandon '27</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  SKILLS  -->
+<section class="skills section" id="skills">
+  <div class="section-label">/ Skills</div>
+  <h2 class="section-title centered reveal">What I Bring</h2>
+  <!--
+    Bootstrap row-cols: 4 columns on lg, 2 on md, 1 on sm.
+    Bootstrap's g-0 removes gutters so the grid lines touch (matching my original).
+  -->
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-0 skills-grid">
+    <div class="col reveal">
+      <div class="skill-card h-100">
+        <div class="skill-icon">⚙️</div>
+        <h3>Technical</h3>
+        <ul>
+          <li>Python · C++</li>
+          <li>HTML (Basic)</li>
+          <li>Autodesk Fusion · Revit</li>
+          <li>SolidWorks (CAD)</li>
+          <li>OpenRocket</li>
+          <li>Adobe CC · Figma · Canva</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col reveal">
+      <div class="skill-card h-100">
+        <div class="skill-icon">📊</div>
+        <h3>Project &amp; Data</h3>
+        <ul>
+          <li>MS Suite · Google Workspace</li>
+          <li>Zoho Projects · Planisware</li>
+          <li>Data Analysis &amp; Statistics</li>
+          <li>ARM Risk Management</li>
+          <li>VSM / MOD Mapping</li>
+          <li>Lessons-Learned Systems</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col reveal">
+      <div class="skill-card h-100">
+        <div class="skill-icon">🚀</div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Leadership &amp; Delegation</li>
+          <li>Cross-functional Collaboration</li>
+          <li>Conflict Resolution</li>
+          <li>Communication · Adaptability</li>
+          <li>Mind-Mapping · Innovation</li>
+          <li>Customer Focus</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col reveal">
+      <div class="skill-card h-100">
+        <div class="skill-icon">🌐</div>
+        <h3>Languages</h3>
+        <ul>
+          <li>English — Advanced</li>
+          <li>Hindi — Advanced</li>
+          <li>French — Basic</li>
+        </ul>
+        <h3 class="skill-subheading">Interests</h3>
+        <ul>
+          <li> Guitar · Golf · Swim</li>
+          <li> Tennis · Basketball</li>
+          <li> Travel · Reading</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  EXPERIENCE  -->
+<section class="experience section" id="experience">
+  <div class="section-label">/ Experience</div>
+  <h2 class="section-title reveal">Where I've Been</h2>
+  <!--
+    I used the Bootstrap Accordion. It replaces the static timeline I used in the midterm.
+    Each role expands on click and more interactive for users.
+    data-bs-parent keeps only one item open at a time.
+  -->
+  <div class="accordion accordion-flush experience-accordion mt-4" id="expAccordion">
+    <div class="accordion-item reveal">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#exp1">
+          <div class="acc-header-inner">
+            <span class="acc-tag">NYU Space Exploration Society</span>
+            <span class="acc-title">Vice President</span>
+            <span class="acc-year">2025 – Now</span>
+          </div>
+        </button>
+      </h2>
+      <div id="exp1" class="accordion-collapse collapse" data-bs-parent="#expAccordion">
+        <div class="accordion-body">
+          Lead weekly E-Board meetings, coordinate events end to end, and built a
+          systematic event checklist tracker to boost team preparedness and follow-through.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item reveal">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#exp2">
+          <div class="acc-header-inner">
+            <span class="acc-tag">Airbus · UK</span>
+            <span class="acc-title">Culture Mindset Lead</span>
+            <span class="acc-year">Mar – Aug 2024</span>
+          </div>
+        </button>
+      </h2>
+      <div id="exp2" class="accordion-collapse collapse" data-bs-parent="#expAccordion">
+        <div class="accordion-body">
+          Led structured KISS workshops across functional teams in the new factory,
+          produced post-workshop summaries and directly supported leadership decision-making.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item reveal">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#exp3">
+          <div class="acc-header-inner">
+            <span class="acc-tag">Airbus · UK</span>
+            <span class="acc-title">Project Management Intern</span>
+            <span class="acc-year">Mar – Aug 2024</span>
+          </div>
+        </button>
+      </h2>
+      <div id="exp3" class="accordion-collapse collapse" data-bs-parent="#expAccordion">
+        <div class="accordion-body">
+          Built a centralised lessons-learned tracker via stakeholder interviews.
+          Supported MOD planning, risk management, and integrated VSM inputs into the ARM system.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item reveal">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#exp4">
+          <div class="acc-header-inner">
+            <span class="acc-tag">Airbus · UK</span>
+            <span class="acc-title">Single Aisle Enablement Intern</span>
+            <span class="acc-year">Aug 2023 – Mar 2024</span>
+          </div>
+        </button>
+      </h2>
+      <div id="exp4" class="accordion-collapse collapse" data-bs-parent="#expAccordion">
+        <div class="accordion-body">
+          Built and maintained a Near-Miss Safety Dashboard. Supported budgeting,
+          procurement and operations. Selected as the <em>only intern</em> to attend
+          the 2024 Outlook Event in Bristol with Airbus Board members.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item reveal">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#exp5">
+          <div class="acc-header-inner">
+            <span class="acc-tag">NYU Tandon</span>
+            <span class="acc-title">Multiple Campus Roles</span>
+            <span class="acc-year">Ongoing</span>
+          </div>
+        </button>
+      </h2>
+      <div id="exp5" class="accordion-collapse collapse" data-bs-parent="#expAccordion">
+        <div class="accordion-body">
+          Front Desk @ NYU Oasis · Avionics @ NYU Rogue Aerospace · Marketing Officer @ SES ·
+          Teaching Assistant (ETF 1001) · Office Assistant @ Undergrad Academics
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  PROJECTS  -->
+<section class="projects section" id="projects">
+  <div class="section-label">/ Projects</div>
+  <h2 class="section-title reveal">Selected Work</h2>
+  <!--
+    Bootstrap 2-column card grid.
+    Clicking a card opens a Bootstrap Modal with more detail.
+    g-0 removes gutters to keep grid-line aesthetic from original.
+  -->
+  <div class="row row-cols-1 row-cols-md-2 g-0 projects-grid">
+    <div class="col reveal">
+      <div class="proj-card tilt-card" data-bs-toggle="modal" data-bs-target="#modal1">
+        <div class="proj-img">
+          <img
+            src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/Screenshot 2026-04-30 at 1.51.30 AM.png"
+            alt="Near-Miss Safety Dashboard"
+          />
+          <div class="proj-overlay"><span>Airbus · Safety — Click to explore</span></div>
+        </div>
+        <div class="proj-info">
+          <h3>Near-Miss Safety Dashboard</h3>
+          <p>EHS incident data dashboard for Airbus shop floor teams covering quality, safety, and people metrics.</p>
+          <div class="proj-tags">
+            <span>Data Analysis</span><span>EHS</span><span>Airbus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col reveal">
+      <div class="proj-card tilt-card" data-bs-toggle="modal" data-bs-target="#modal2">
+        <div class="proj-img">
+          <img
+            src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/Lessons_learnt.png"
+            alt="Lessons-Learned Tracker"
+          />
+          <div class="proj-overlay"><span>Project Management — Click to explore</span></div>
+        </div>
+        <div class="proj-info">
+          <h3>Lessons-Learned Tracker</h3>
+          <p>Centralised lessons-learned process at Airbus built from stakeholder interviews and data analysis.</p>
+          <div class="proj-tags">
+            <span>PM</span><span>Stakeholders</span><span>Airbus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col reveal">
+      <div class="proj-card tilt-card" data-bs-toggle="modal" data-bs-target="#modal3">
+        <div class="proj-img">
+          <img
+            src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/IMG_9135.jpg"
+            alt="NYU Rogue Aerospace"
+          />
+          <div class="proj-overlay"><span>Avionics · Aerospace — Click to explore</span></div>
+        </div>
+        <div class="proj-info">
+          <h3>NYU Rogue Aerospace</h3>
+          <p>3+ years on NYU's avionics team contributing to real rocket systems from design to testing.</p>
+          <div class="proj-tags">
+            <span>Avionics</span><span>OpenRocket</span><span>CAD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col reveal">
+      <div class="proj-card tilt-card" data-bs-toggle="modal" data-bs-target="#modal4">
+        <div class="proj-img">
+          <img
+            src="https://placehold.co/800x500/1A1A1A/FF2D78?text=SES+Event+Ops+System&font=bebas-neue"
+            alt="SES Event Ops System"
+          />
+          <div class="proj-overlay"><span>Event Design — Click to explore</span></div>
+        </div>
+        <div class="proj-info">
+          <h3>SES Event Ops System</h3>
+          <p>Structured event checklist and tracker system rolled out as VP of NYU Space Exploration Society.</p>
+          <div class="proj-tags">
+            <span>Leadership</span><span>Operations</span><span>NYU</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  PROJECT MODALS  -->
+<!-- Bootstrap Modals: triggered by data-bs-toggle on project cards above -->
+
+<div class="modal fade custom-modal" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Near-Miss Safety Dashboard</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img
+          src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/Screenshot 2026-04-30 at 1.51.30 AM.png""
+          class="img-fluid mb-3 modal-detail-img"
+          alt="Dashboard detail"
+        />
+        <p>Designed and maintained an EHS incident data dashboard for Airbus shop floor teams covering quality, safety, 
+          and people metrics to improve safety visibility across the factory.</p>
+        <div class="proj-tags mt-2">
+          <span>Data Analysis</span><span>EHS</span><span>Airbus</span><span>2023–2024</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade custom-modal" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Lessons-Learned Tracker</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img
+          src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/Lessons_learnt.png"
+          class="img-fluid mb-3 modal-detail-img"
+          alt="Tracker detail"
+        />
+        <p>Defined and implemented a centralised lessons-learned process at Airbus by conducting stakeholder interviews, 
+          analysing data, and building a full tracking system for continuous improvement.</p>
+        <div class="proj-tags mt-2">
+          <span>PM</span><span>Stakeholders</span><span>Airbus</span><span>2024</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade custom-modal" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">NYU Rogue Aerospace</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img
+          src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/IMG_9135.jpg"
+          class="img-fluid mb-3 modal-detail-img"
+          alt="Rogue Aerospace detail"
+        />
+        <p>3+ year member of NYU's avionics team contributing to real rocket systems from component design and OpenRocket 
+          simulation to physical testing alongside fellow student engineers.</p>
+        <div class="proj-tags mt-2">
+          <span>Avionics</span><span>OpenRocket</span><span>CAD</span><span>Ongoing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade custom-modal" id="modal4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">SES Event Ops System</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img
+          src="https://placehold.co/900x450/111111/FF2D78?text=Event+Ops+Detail&font=bebas-neue"
+          class="img-fluid mb-3 modal-detail-img"
+          alt="Event Ops detail"
+        />
+        <p>Designed and rolled out a structured event checklist and tracker system as VP of the NYU Space Exploration Society, 
+          improving team preparedness and follow-through across all events.</p>
+        <div class="proj-tags mt-2">
+          <span>Leadership</span><span>Operations</span><span>NYU</span><span>2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  GALLERY  -->
+<!-- NEW SECTION FOR FINAL SUBMISSION— Bootstrap Carousel + clickable thumbnail grid -->
+<section class="gallery section" id="gallery">
+  <div class="section-label">/ Gallery</div>
+  <h2 class="section-title reveal">Moments &amp; Work</h2>
+
+  <!-- Bootstrap Carousel -->
+  <div id="galleryCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/IMG_0211.JPG"
+          class="d-block w-100 carousel-slide-img"
+          alt="Airbus Family"
+        />
+        <div class="carousel-caption">
+          <h5>Airbus Family</h5>
+          <p>Behind the scenes of the my internship</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/rocket.png"
+          class="d-block w-100 carousel-slide-img"
+          alt="Recieved my High Power Rocketery Certification Level 1"
+        />
+        <div class="carousel-caption">
+          <h5>Recieved High Power Rocketery Certification Level 1</h5>
+          <p>NYU's Rogue Aerospace</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/Screenshot 2026-05-05 at 10.53.55 PM.png"
+          class="d-block w-100 carousel-slide-img"
+          alt="SES Event"
+        />
+        <div class="carousel-caption">
+          <h5>Space Exploration Society</h5>
+          <p>Hosting campus event</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/IMG_1476.png"
+          class="d-block w-100 carousel-slide-img"
+          alt="Airbus Outlook 2024"
+        />
+        <div class="carousel-caption">
+          <h5>Airbus Outlook Event 2024</h5>
+          <p>The only intern representing Broughton Site in the room</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://placehold.co/1200x500/111111/E8FF00?text=NYU+Tandon+Campus&font=bebas-neue"
+          class="d-block w-100 carousel-slide-img"
+          alt="NYU Tandon"
+        />
+        <div class="carousel-caption">
+          <h5>NYU Tandon</h5>
+          <p>Where ideas get built</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Clickable thumbnail row that syncs with carousel -->
+  <div class="row g-2 mt-3 gallery-thumbs">
+    <div class="col reveal">
+      <img src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/IMG_0211.JPG"
+           class="img-fluid gallery-thumb active-thumb" data-slide="0" alt="thumb 1"/>
+    </div>
+    <div class="col reveal">
+      <img src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/rocket.png"
+           class="img-fluid gallery-thumb" data-slide="1" alt="thumb 2"/>
+    </div>
+    <div class="col reveal">
+      <img src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/Screenshot 2026-05-05 at 10.53.55 PM.png"
+           class="img-fluid gallery-thumb" data-slide="2" alt="thumb 3"/>
+    </div>
+    <div class="col reveal">
+      <img src="/Users/ananyaasingh/Desktop/webdev26/ananya_singh/Ananya's Portfolio- FINAL/img/IMG_1476.png"
+           class="img-fluid gallery-thumb" data-slide="3" alt="thumb 4"/>
+    </div>
+    <div class="col reveal">
+      <img src="https://placehold.co/300x170/1A1A1A/E8FF00?text=NYU+Tandon&font=bebas-neue"
+           class="img-fluid gallery-thumb" data-slide="4" alt="thumb 5"/>
+    </div>
+  </div>
+</section>
+
+<!--  CONTACT  -->
+<section class="contact section" id="contact">
+  <div class="section-label">/ Contact</div>
+  <div class="contact-inner">
+    <div class="contact-left">
+      <h2 class="contact-title reveal">
+        Let's<br/><span class="accent-yellow">work</span><br/>together.
+      </h2>
+      <p class="contact-sub reveal">I'd love to hear from you.</p>
+      <div class="contact-links reveal">
+        <a href="mailto:ananyasingh@nyu.edu" class="contact-item">
+          <span class="ci-label">Email</span>
+          <span class="ci-val">ananyasingh@nyu.edu ↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ananyasingh22" target="_blank" class="contact-item">
+          <span class="ci-label">LinkedIn</span>
+          <span class="ci-val">ananyasingh22 ↗</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-right reveal">
+      <div class="form-embed-wrap">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdUP_V5F59NO4AfG4tYrmfokriYt1ECSH00Itl3ntwXFv0dBQ/viewform?embedded=true" 
+          width="640" height="992" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"
+        </iframe>
+        <p class="form-fallback">
+          Can't see the form? <a href="https://forms.gle/Zhm2BCp6QP5mUh2X6" target="_blank">Open it here ↗</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  FOOTER  -->
+<footer class="footer">
+  <p>© 2025 Ananya Singh</p>
+  <p class="footer-right">NYU Tandon · NYC</p>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
