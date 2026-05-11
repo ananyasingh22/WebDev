@@ -1,3 +1,4 @@
+Site Demo Video: https://drive.google.com/file/d/1cOT3nr3kRL1XtVApSJLJrAluWcdNvOJh/view?usp=sharing 
 Some rough notes I made during the works. I divided them based on the flow pages. 
 
 I made changes directly to my midterm code, added and deleted stuff from it. 
